@@ -1,0 +1,19 @@
+# Core dependencies
+PySide6>=6.5.0
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Authentication
+supabase>=2.0.0
+
+# Video playback (requires libmpv DLL separately)
+mpv>=1.0.0
+
+# Image processing
+Pillow>=10.0.0
+
+# HEIC support - uses pre-built wheels, no compiler needed
+pillow-heif>=0.13.0; platform_system != "Windows" or python_version >= "3.9"
+
+# SSL certificates
+certifi>=2023.0.0

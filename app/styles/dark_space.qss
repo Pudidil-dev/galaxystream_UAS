@@ -1,0 +1,172 @@
+/* Global Styles */
+QWidget {
+    color: #FFFFFF;
+    font-family: 'Inter', 'SF Pro', 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+QMainWindow, QWidget#CentralWidget {
+    background-color: #0B0D12;
+}
+
+/* Sidebar Styling */
+#Sidebar {
+    background-color: #000000;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    min-width: 240px;
+}
+
+#SidebarLogo {
+    font-size: 26px;
+    font-weight: 900;
+    color: #E50914;
+    padding: 30px 20px;
+    letter-spacing: -1px;
+}
+
+#SidebarMenu QPushButton {
+    text-align: left;
+    padding: 12px 25px;
+    border: none;
+    background: transparent;
+    color: #A3A3A3;
+    font-weight: 500;
+    border-radius: 0px;
+    margin: 0px;
+    border-left: 3px solid transparent;
+}
+
+#SidebarMenu QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #FFFFFF;
+}
+
+#SidebarMenu QPushButton:checked {
+    background-color: rgba(229, 9, 20, 0.1);
+    color: #FFFFFF;
+    border-left: 3px solid #E50914;
+    font-weight: bold;
+}
+
+/* TopBar Styling */
+#TopBar {
+    background-color: rgba(11, 13, 18, 0.0);
+    padding: 10px;
+}
+
+#SearchInput {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 10px 15px 10px 40px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+#SearchInput:focus {
+    border: 1px solid #FFFFFF;
+}
+
+/* Movie Card Styling */
+#MovieCard {
+    background: transparent;
+}
+
+#MovieCardPoster {
+    border-radius: 4px;
+    background-color: #1a1a1a;
+}
+
+#MovieCardTitle {
+    font-weight: 600;
+    font-size: 14px;
+    color: #E5E5E5;
+}
+
+#MovieCardRating {
+    color: #46D369;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Home Page */
+#MainScroll, #MainScroll > QWidget, #MainScroll > QWidget > QWidget {
+    background-color: #0B0D12;
+    border: none;
+}
+
+/* Hero Banner */
+#HeroBanner {
+    border-bottom: 2px solid #1a1a1a;
+}
+
+/* Buttons */
+QPushButton#PrimaryButton {
+    background-color: #E50914;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+
+QPushButton#PrimaryButton:hover {
+    background-color: #ff1f2a;
+}
+
+QPushButton#SecondaryButton {
+    background-color: rgba(109, 109, 110, 0.4);
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+QPushButton#SecondaryButton:hover {
+    background-color: rgba(109, 109, 110, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* Player Controls */
+#PlayerOverlay {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(0, 0, 0, 0.9));
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #333;
+    height: 4px;
+    background: #333;
+    margin: 2px 0;
+}
+
+QSlider::handle:horizontal {
+    background: #E50914;
+    border: 1px solid #E50914;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+QSlider::sub-page:horizontal {
+    background: #E50914;
+}
+
+/* ScrollBar */
+QScrollBar:vertical {
+    border: none;
+    background: #0B0D12;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #333;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
